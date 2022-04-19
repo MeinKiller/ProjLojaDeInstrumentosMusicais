@@ -1,0 +1,32 @@
+create TABLE instrumento(
+idinstrumento int auto_increment,
+nome varchar(50) not null,
+preco double not null,
+quantidade int not null,
+marca varchar(20) not null,
+instrumento varchar(30) not null,
+cor varchar(30) not null,
+primary key(idinstrumento)
+);
+
+create table cliente(
+idcliente int auto_increment,
+nome varchar(50) not null,
+cpf varchar(20) not null,
+sexo varchar(10) not null,
+localizacao varchar(100) not null,
+pagamento double not null,
+quantidadecompra int not null,
+primary key(idcliente)
+);
+
+create table funcionario(
+idfuncionario int auto_increment,
+nome varchar(50) not null,
+cargo varchar(30) not null,
+filial varchar(20) not null,
+localizacao varchar(100) not null,
+idade int not null,
+salario double not null,
+primary key(idfuncionario)
+);
